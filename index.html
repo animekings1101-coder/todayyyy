@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Yashika 💖</title>
+  <link rel="stylesheet" href="css/bday.css">
+</head>
+<body>
+
+<!-- 🎵 ONE CONTINUOUS MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="" type="audio/mpeg">
+</audio>
+
+<!-- ================= PAGE 1 : LOCK ================= -->
+<div id="page1" class="page show">
+  <div id="lockScreen">
+    <h1>hello Dear Yashika jii...hope you doing well 💖</h1>
+    <input type="password" id="passwordInput" placeholder="Enter password" />
+    <button id="unlockBtn">Unlock</button>
+    <p id="errorMsg"></p>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div id="page2" class="page">
+  <div class="birthday-center">
+    <div class="birthday-card">
+      <img src="assets/images/pic1.jpg" class="birthday-img">
+      <h2 class="intro-text">Happy Birthday Yashika 🎂</h2>
+      <p class="praise-text">
+        You are rare, beautiful and effortlessly special.  
+        Your presence alone makes everything brighter 💖
+      </p>
+
+      <div class="yes-buttons">
+        <button class="yes soft" onclick="showPage('page3')">YES 💗</button>
+        <button class="yes bold" onclick="showPage('page3')">YES 😌</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PAGE 3 : GALLERY ================= -->
+<div id="page3" class="page">
+  <h1 class="gallery-title">Beautiful Memories 💫</h1>
+
+  <div class="gallery-container">
+    <img id="galleryImg" src="assets/images/pic1.jpg">
+  </div>
+
+  <div class="gallery-nav">
+    <button onclick="prevImg()">‹</button>
+    <button onclick="nextImg()">›</button>
+  </div>
+</div>
+
+<!-- ================= PAGE 4 : FINAL ================= -->
+<div id="page4" class="page">
+  <h1 class="birthday-title">🎉 Happy Birthday Yashika 🎉</h1>
+
+  <div class="final-images">
+    <img src="assets/images/pic1.jpg">
+    <img src="assets/images/pic2.jpg">
+    <img src="assets/images/pic3.jpg">
+  </div>
+
+  <p class="birthday-text">
+    May your life always shine as beautifully as your smile 💖
+  </p>
+
+  <p class="shayari">
+    “Tumhari muskurahat hi meri sabse badi jeet hai,
+    Tum ho toh har din khubsurat hai.” ✨
+  </p>
+
+  <p class="final-line">Once again… Happy Birthday 🎂💫</p>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

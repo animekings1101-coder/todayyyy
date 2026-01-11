@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your some beautiful pics 💖</title>
+  <link rel="stylesheet" href="css/bday.css">
+</head>
+<body>
+
+  <!-- PAGE 3 ROOT -->
+  <div id="page3" class="gallery-page">
+
+    <h1 class="gallery-title">
+      My favourite cute pic of yours💫
+    </h1>
+
+    <div class="gallery-container single-image">
+      <img src="yash6.jpg" alt="Memory Photo" class="single-img">
+    </div>
+
+    <p class="hint-text">Today is all about you Girl ✨</p>
+
+    <!-- CONTINUE BUTTON -->
+    <button id="goNext" class="continue-btn">
+      Continue 💖
+    </button>
+
+  </div>
+
+  <!-- ONE CONTINUOUS MUSIC -->
+  <audio autoplay loop>
+    <source src="Blue (Yung Kai)-(SambalpuriStar.In).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PAGE 3 SCRIPT -->
+  <script>
+    document.getElementById("goNext").addEventListener("click", () => {
+      document.body.style.opacity = "0";
+      setTimeout(() => {
+        window.location.href = "page4.html";
+      }, 700);
+    });
+  </script>
+
+</body>
+</html>

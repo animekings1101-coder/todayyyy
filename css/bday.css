@@ -1,0 +1,308 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= GLOBAL BODY ================= */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ================= PAGE 1 : LOCK SCREEN ================= */
+#lockScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(255, 182, 193, 0.25);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+#lockScreen h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #ffb6c1;
+}
+
+#passwordInput {
+  width: 260px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#unlockBtn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff8fab, #ffb3c6);
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#unlockBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+}
+
+#errorMsg {
+  margin-top: 10px;
+  color: #ff4d6d;
+  font-size: 14px;
+}
+
+/* ================= PAGE 2 : CENTER BIRTHDAY ================= */
+.birthday-center {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.birthday-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  padding: 45px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(255,182,193,0.45);
+  max-width: 460px;
+}
+
+.birthday-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffb6c1;
+  margin-bottom: 25px;
+}
+
+.intro-text {
+  font-size: 34px;
+  color: #ffb6c1;
+  margin-bottom: 20px;
+}
+
+.praise-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: #ffe6ec;
+}
+
+/* QUESTION */
+.question p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.yes-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.yes {
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s ease;
+}
+
+.yes.soft {
+  background: rgba(255, 182, 193, 0.25);
+  color: #fff;
+  border: 1px solid rgba(255, 182, 193, 0.4);
+}
+
+.yes.soft:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
+}
+
+.yes.bold {
+  background: linear-gradient(135deg, #ff8fab, #ffb3c6);
+  color: #000;
+}
+
+.yes.bold:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 30px rgba(255, 140, 160, 0.8);
+}
+
+/* ================= PAGE 3 : GALLERY ================= */
+#page3 {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #ffb6c1;
+}
+
+.gallery-container img {
+  width: 320px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 182, 193, 0.4);
+}
+
+.gallery-nav {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+
+.gallery-nav button {
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #ffb6c1;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery-nav button:hover {
+  transform: scale(1.3);
+}
+
+/* ================= PAGE 4 : FINAL ================= */
+#page4 {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.birthday-title {
+  font-size: 42px;
+  color: #ffb6c1;
+  margin-bottom: 20px;
+}
+
+.birthday-text,
+.shayari,
+.final-line {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* CONFETTI CANVAS */
+#confettiCanvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.shake {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+
+/* ================= PAGE 4 FINAL IMAGES ================= */
+
+.final-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 25px;
+}
+
+.final-images {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.final-images img {
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid rgba(255,182,193,0.7);
+  box-shadow: 0 0 30px rgba(255,182,193,0.45);
+  transition: 0.4s ease;
+}
+
+.final-images img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 45px rgba(255,182,193,0.8);
+}
+
+/* TEXT SPACING */
+.birthday-title {
+  margin-top: 10px;
+}
+
+.birthday-text,
+.shayari,
+.final-line {
+  max-width: 700px;
+}
+.single-image {
+  margin-top: 30px;
+}
+
+.single-img {
+  width: 320px;
+  max-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 50px rgba(255,182,193,0.5);
+  animation: fadeIn 1.5s ease;
+}
